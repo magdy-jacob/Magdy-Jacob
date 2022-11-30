@@ -46,52 +46,55 @@
 .section{
     padding: 100px 200px;    
 }
+
+    
+
 .main{
+   
     width: 100%;
-    padding: 100px 200px;
-    min-height: 100vh;
+    min-height: 85vh;
     display: flex;
     align-items: center;
-    background: url() no-repeat ;
+    background: url(photo/background.jpg) no-repeat ;
     background-size: cover;
-        transition: all 0.5s ease;
-    background-position: center center;
+    background-position: center;
+    transition: all 0.5s ease;
     background-attachment: fixed;
 
 }
 .main h2{
-    color: rgb(0, 0, 0);
-    font-size: 1.4em;
+    color: rgb(255, 218, 218);
+    font-size: 2em;
     transition: all 0.5s ease;
-    font-weight: 500;
+    font-weight: 900;
     margin-bottom: 40px;
 
 }
 .main h2 span{
-    color: brown;
-    font-size: 3em;
+    color: rgb(255, 255, 255);
+    font-size: 3.5em;
     font-weight: 700;
     transition: all 0.5s ease;
     margin-top: 10px;
     display: inline-block;
 }
 .main h2 p{
-    font-size:0.5em;
+    font-size:0.8em;
     transition: all 0.5s ease;
     font-weight: 700;
 }
 .main h3{
-    color: black;
-    font-size: 2em;
-    font-weight: 700;
+    color: rgb(255, 255, 255);
+    font-size: 3em;
+    font-weight: 800;
     margin-top: 10px;
     margin-bottom: 40px;
     transition: all 0.5s ease;
     letter-spacing: 2px;
 }
 .main_button{
-    background-color: brown;
-    color: black;
+    background-color: rgb(217, 28, 28);
+    color: rgb(0, 0, 0);
     text-decoration: none;
     font-size: 1.1em;
     font-weight: 600;
@@ -103,16 +106,19 @@
     transition: all 0.5s ease;
 }
 .main_button:hover{
-    background-color: rgb(172, 19, 19) ;
+    background-color: rgb(100, 14, 14) ;
     transform: scale(1.2);
     color: white;
 
 }
 .social-icon a{
-    color: brown;
+    color: rgb(255, 208, 208);
     font-size: 2em;
     transition: all 0.5s ease;
     padding-right: 30px;    
+}
+.social-icon a:hover{
+    color: black;
 }
 .content{
     display: flex;
@@ -148,6 +154,11 @@
 .title:hover{
     color: rgb(127, 9, 9);
 
+}
+.navig  p{
+    color: rgb(0, 0, 0);
+    text-indent: 5px;
+    display: inline-block;
 }
 .info{
     text-align: center;
@@ -242,42 +253,49 @@
     color: black;
 }
 
-@media (max-width:1023px){
+@media (width:1280px){
     header{
         padding: 12px 20px;
     }
-    .navig a{
-        padding-left: 5px;
-        font-size: 0.7em;
+    header .navig a{
+        padding:15px;
+        font-size: 1em;
 
     }
     .logo{
-        font-size: 1.2em;
+        font-size: 2em;
+        padding-left: 30px;
     }
     .title{
         font-size: 1.8em;
     }
-    .main{
-        padding: 80px 30px;
+    .main .background{
+        padding: 130px 50px;
+        width: 100%;
+        height: 84.5vh;
+        background: url(photo/background3.jpg) no-repeat ;
+        background-size: cover;
+        background-position: center;
     }
-    .main h2 {
-        font-size: 1em;
-    }
-    .main h3 {
+    .main .background h2 {
         font-size: 1.2em;
+    }
+    .main h2 span{
+        font-size: 2em;
         
     }
-    .main_button{
+    .main .background h3 {
         font-size: 1em;
+        
+    }
+    .background .main_button {
+        font-size: 1em;
+        margin-bottom: 15px;
     }
     .title{
         font-size: 1.8em;
     }
-    .content{
-        flex-direction: column;
-        align-items: center;
-        pa
-    }
+
     .card{
         margin-left:20px;
         margin-right: 20px;
@@ -287,17 +305,181 @@
         margin-bottom: 100px;
     }
     .footer{
-        padding: 0.5em;
+        padding: 1.5em;
         align-items: center;
     }
     .footer_prag{
-        font-size: 0.8em;
+        font-size: 1em;
     }
     .footer.social-icon a{
         font-size: 0.5em;
         padding-right: 5px ;
     }
 
+
+}
+@media (width:820px) {
+    .main .background h2 {
+        font-size: 1em;
+    }
+    .main{
+        padding: 30px;
+    }
+    .main h2 span{
+        font-size: 3em;
+        
+    }
+    .main .background h3 {
+        font-size: 1.5em;
+        
+    }
+    .main .main_button {
+        font-size: 1em;
+    }
+    .social-icon a{
+        font-size: 3em;
+    }
+
+    
+}
+@media (width:1024px) {
+    .main .background h2 {
+        font-size: 1em;
+    }
+    .main{
+        padding: 30px;
+    }
+    .main h2 span{
+        font-size: 3em;
+        
+    }
+    .main .background h3 {
+        font-size: 1.5em;
+        
+    }
+    .main .main_button {
+        font-size: 1em;
+    }
+    .social-icon a{
+        font-size: 3em;
+    }
+
+    
+}
+@media (width:1440px) {
+    header .navig a {
+        font-size: 1.2em;
+    }
+    header .logo{
+        font-size: 3em;
+    }
+    .main .background h2 {
+        font-size: 1.2em;
+    }
+    .main{
+        padding: 80px 100px;
+    }
+    .main h2 span{
+        font-size: 3.5em;
+        
+    }
+    .main .background h3 {
+        font-size: 1.5em;
+        
+    }
+    .main .main_button {
+        font-size: 1.5em;
+    }
+    .social-icon a{
+        font-size: 3.5em;
+    }
+
+    
+}
+@media (width:375px) {
+    .main .background h2 {
+        font-size: 0.8em;
+    }
+    .main{
+        padding: 25px;
+    }
+    .main h2 span{
+        font-size: 1em;
+        
+    }
+    .main .background h3 {
+        font-size: 1em;
+        
+    }
+    .main .main_button {
+        font-size: 0.8em;
+    }
+    .social-icon a{
+        font-size: 2em;
+        
+    }
+
+    
+}
+@media (width:768px) {
+    .main .background h2 {
+        font-size: 1em;
+    }
+    .main{
+        padding: 30px;
+    }
+    .main h2 span{
+        font-size: 2.8em;
+        
+    }
+    .main .background h3 {
+        font-size: 1em;
+        
+    }
+    .main .main_button {
+        font-size: 0.8em;
+    }
+    .social-icon a{
+        font-size: 2em;
+    }
+
+    
+}
+@media (width:912px) {
+    .main .background h2 {
+        font-size: 1.2em;
+    }
+    .card{
+        width: 0px;
+        margin-right: 25px;
+    }
+    .projact_card{
+        width: 10em;
+    }
+    .main{
+        padding: 30px;
+    }
+    .main h2 span{
+        font-size: 2.7em;
+        
+    }
+    .main .background h3 {
+        font-size: 1.5em;
+        
+    }
+    .main .main_button {
+        font-size: 1.4em;
+    }
+    .social-icon a{
+        font-size: 4em;
+    }
+    .content{
+        flex-direction: row;
+        justify-content: center;
+       
+    }
+
+    
 }
 
 @media (min-width:320px){
